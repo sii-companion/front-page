@@ -14,97 +14,197 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-  <!-- Custom styles for this template -->
-  <link href="css/cover.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body class="text-center">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="mx-left order-0">
+      <a class="navbar-brand" href="#">
+        <img alt="Companion" style="width: 140px;" src="img/companion_nav.png">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Install</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/iii-companion/companion" target="_blank" rel="noopener">
+              <span class="iconify" data-icon="akar-icons:github-fill" data-width="28"></span>
+              <small class="d-md-none ms-2">GitHub</small>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/companionserver" target="_blank" rel="noopener">
+              <span class="iconify" data-icon="akar-icons:twitter-fill" data-width="28"></span>
+              <small class="d-md-none ms-2">Twitter</small>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hub.docker.com/repository/docker/uofgiii/companion" target="_blank" rel="noopener">
+              <span class="iconify" data-icon="mdi:docker" data-width="28"></span>
+              <small class="d-md-none ms-2">Docker</small>
+            </a>
+          </li>          
+        </ul>
+      </div>        
+    </div>
+  </nav>
+  
+  <div class="d-flex h-100 p-3 mx-auto flex-column">
 
-  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">Companion</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <main role="main">
 
-    <main role="main" class="inner cover">
-      <img alt="Companion" class="img-responsive center-block" src="img\companion_logo.png">
-      <p class="lead">Easy and reliable genome annotation.</p>
-      <!-- <h1 class="cover-heading">Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-      </p> -->
-      <div class="album py-5 bg-dark">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4 bg-dark">
-              <div class="card mb-4 box-shadow">
-                <div class="card-body" style="background-color:green;">
-                  <p class="card-text">Annotate sequence against fungi reference genomes</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="fungicompanion.html">Go</a>
-                    </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-9 jumbotron">
+            <img alt="Companion" class="img-responsive center-block" src="img\companion_logo.png">
+            <p>Easy and reliable genome annotation.</p>
+            <p><a class="btn btn-lg btn-primary" href="companion.html" role="button">Annotate <i>your</i> sequence!</a></p>              
+            <div class="row justify-content-center">
+              <div class="card-deck">
+                <div class="card text-center" style="width: 300px;">
+                  <img alt="Fungal cell" height="150px;" class="card-img-top rounded mx-auto d-block" src="img\fungi.png">
+                  <div class="card-body align-bottom">
+                    <h2 class="card-title">Fungi</h2>
+                    <p class="card-text">Annotate your sequence against fungi reference genomes</p>
+                    <a class="btn btn-primary" href="fungi.html">Annotate</a>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 300px;">
+                  <img alt="Fungal cell" height="150px;" class="card-img-top" src="img\protozoa.jpg">
+                  <div class="card-body  align-bottom">
+                    <h2 class="card-title">Protozoa</h2>
+                    <p class="card-text">Annotate your sequence against protozoa reference genomes</p>
+                    <a class="btn btn-primary" href="protozoa.html">Annotate</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <div class="card-body" style="background-color:blue;">
-                  <p class="card-text">Annotate sequence against protozoa reference genomes</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="protozoacompanion.html">Go</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <div class="card-body" style="background-color:red;">
-                  <p class="card-text">Original Companion server</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="companion.html">Go</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>        
           </div>
+          <div class="col-3">
+            <div class="row">
+              
+              <div class="col">
+                <h2>Cite</h2>
+                <div style="text-align: left;">                       
+                  <p style="margin-bottom: 1em">If you are using <i>Companion</i> in your research, please cite the following publication:</p>                
+                  <cite style="font-size:11px"><p>Steinbiss S, Silva-Franco F, Brunk B, Foth B, Hertz-Fowler C <i>et al.</i><br>
+                    Companion: a web server for annotation and analysis of parasite genomes.<br>
+                    <i>Nucleic Acids Research</i>, 44:W29-W34, 2016.<br>
+                    DOI: <a href="http://dx.doi.org/10.1093/nar/gkw292">10.1093/nar/gkw292</a>
+                  </cite>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col">
+                <a class="twitter-timeline" data-width="400" data-height="300" data-theme="light" href="https://twitter.com/CompanionServer?ref_src=twsrc%5Etfw">Tweets by CompanionServer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>                                        
+          </div>                    
+          
         </div>
       </div>
-    </main>
 
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <hr>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Now in Glasgow</h2>
+          <p>To further develop <i>Companion</i>, we implemented a new instance at the University of Glasgow.
+           The server has more resources, so jobs should run twice as fast.</p>
+        </div>
+        <div class="col-md-3">
+          <h2>Quick</h2>
+          <p>Annotation results are typically ready in a couple of hours.
+            Submit multiple jobs at once and we will keep you up to date
+            about their progress.</p>          
+        </div>
+        <div class="col-md-3">
+          <h2>Easy</h2>
+          <p>Annotation of a new genome could be as easy as uploading your scaffold sequences (FASTA, EMBL, GenBank), choosing a reference and pushing a button!</p>
+        </div>
+        <div class="col-md-3">
+          <h2>Full-stack</h2>
+          <p>The pipeline spans many aspects of new genome production: from pseudochromosome contiguation, structural and functional gene annotation, through to comparative analyses and visualization.</p>
+        </div>
       </div>
-    </footer>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <h2>Standards compliant</h2>
+          <p>Annotation results are provided in
+            validated <a href="http://www.sequenceontology.org/gff3.shtml">GFF3</a>
+            format for gene model and product annotations, and
+            <a href="http://geneontology.org/page/go-annotation-file-gaf-format-10">GAF</a>
+            format for GO associations.</p>
+        </div>
+        <div class="col-md-3">
+          <h2>Social media</h2>
+          <p><a href="https://twitter.com/companionserver?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @companionserver</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <br>
+            for the lastest developments and updates.</p>
+        </div>
+        <div class="col-md-3">
+          <h2>High quality</h2>
+          <p>Data-generating components of the pipeline are built on time-tested
+            <em>de facto</em> standard software.</p>
+        </div>
+        <div class="col-md-3">
+          <h2>Portable</h2>
+          <p>Want to tweak the pipeline or perform large-scale annotations on
+            your compute cluster? Get <a href="http://www.nextflow.io">Nextflow</a>,
+            the pipeline <a href="https://github.com/iii-companion/companion">code</a>
+            under the hood and the <a href="https://www.docker.com">Docker</a>
+            <a href="https://hub.docker.com/repository/docker/uofgiii/companion">dependencies</a>
+            and run the whole workflow on your own machine!</p>
+        </div>
+      </div>
+        
+    </main>
   </div>
 
-  <!-- Add your site or application content here -->
-  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+  <footer class="container">
+    <div class="copyright">
+      <p class="pull-right" style="margin-right: 20px;">
+        <a href="http://www.gla.ac.uk/legal/">Terms and conditions</a> · <a href="https://www.gla.ac.uk/legal/privacy/">Privacy policy</a>
+      </p>
+      <p>
+        Companion is developed first by the <a href="http://www.sanger.ac.uk/science/groups/berriman-group">Parasite Genomics group</a> at the WTSI and now is continued in the <a href="https://www.gla.ac.uk/researchinstitutes/iii/staff/thomasdanotto/">biottofni</a> 
+  group in Glasgow.
+      </p>
+      <p>Copyright © 2015 Genome Research Limited.</p>
+    </div>
+  </footer>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
