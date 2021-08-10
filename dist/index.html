@@ -86,7 +86,7 @@
 
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-9 jumbotron">
+          <div class="col-12 jumbotron">
             <img alt="Companion" class="img-responsive center-block" src="img\companion_logo.png">
             <p>Easy and reliable genome annotation.</p>
             <p><a class="btn btn-lg btn-primary" href="companion.html" role="button">Annotate <i>your</i> sequence!</a></p>              
@@ -111,9 +111,75 @@
               </div>
             </div>        
           </div>
-          <div class="col-3">
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8 border-right">
             <div class="row">
-              
+              <div class="col-6">
+                <h2>Now in Glasgow</h2>
+                <p>To further develop <i>Companion</i>, we implemented a new instance at the University of Glasgow.
+                The server has more resources, so jobs should run twice as fast.</p>
+              </div>
+              <div class="col-6">
+                <h2>Quick</h2>
+                <p>Annotation results are typically ready in a couple of hours.
+                  Submit multiple jobs at once and we will keep you up to date
+                  about their progress.</p>          
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h2>Easy</h2>
+                <p>Annotation of a new genome could be as easy as uploading your scaffold sequences (FASTA, EMBL, GenBank), choosing a reference and pushing a button!</p>
+              </div>
+              <div class="col-6">
+                <h2>Full-stack</h2>
+                <p>The pipeline spans many aspects of new genome production: from pseudochromosome contiguation, structural and functional gene annotation, through to comparative analyses and visualization.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h2>Standards compliant</h2>
+                <p>Annotation results are provided in
+                  validated <a href="http://www.sequenceontology.org/gff3.shtml">GFF3</a>
+                  format for gene model and product annotations, and
+                  <a href="http://geneontology.org/page/go-annotation-file-gaf-format-10">GAF</a>
+                  format for GO associations.</p>
+              </div>
+              <div class="col-6">
+                <h2>Social media</h2>
+                <p><a href="https://twitter.com/companionserver?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @companionserver</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <br>
+                  for the lastest developments and updates.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h2>High quality</h2>
+                <p>Data-generating components of the pipeline are built on time-tested
+                  <em>de facto</em> standard software.</p>
+              </div>
+              <div class="col-6">
+                <h2>Portable</h2>
+                <p>Want to tweak the pipeline or perform large-scale annotations on
+                  your compute cluster? Get <a href="http://www.nextflow.io">Nextflow</a>,
+                  the pipeline <a href="https://github.com/iii-companion/companion">code</a>
+                  under the hood and the <a href="https://www.docker.com">Docker</a>
+                  <a href="https://hub.docker.com/repository/docker/uofgiii/companion">dependencies</a>
+                  and run the whole workflow on your own machine!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row border-bottom">
+              <div class="col">
+                <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/CompanionServer?ref_src=twsrc%5Etfw">Tweets by CompanionServer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+            <div class="row">              
               <div class="col">
                 <h2>Cite</h2>
                 <div style="text-align: left;">                       
@@ -125,69 +191,8 @@
                   </cite>
                 </div>
               </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col">
-                <a class="twitter-timeline" data-width="400" data-height="300" data-theme="light" href="https://twitter.com/CompanionServer?ref_src=twsrc%5Etfw">Tweets by CompanionServer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>                                        
-          </div>                    
-          
-        </div>
-      </div>
-
-      <hr>
-      
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Now in Glasgow</h2>
-          <p>To further develop <i>Companion</i>, we implemented a new instance at the University of Glasgow.
-           The server has more resources, so jobs should run twice as fast.</p>
-        </div>
-        <div class="col-md-3">
-          <h2>Quick</h2>
-          <p>Annotation results are typically ready in a couple of hours.
-            Submit multiple jobs at once and we will keep you up to date
-            about their progress.</p>          
-        </div>
-        <div class="col-md-3">
-          <h2>Easy</h2>
-          <p>Annotation of a new genome could be as easy as uploading your scaffold sequences (FASTA, EMBL, GenBank), choosing a reference and pushing a button!</p>
-        </div>
-        <div class="col-md-3">
-          <h2>Full-stack</h2>
-          <p>The pipeline spans many aspects of new genome production: from pseudochromosome contiguation, structural and functional gene annotation, through to comparative analyses and visualization.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <h2>Standards compliant</h2>
-          <p>Annotation results are provided in
-            validated <a href="http://www.sequenceontology.org/gff3.shtml">GFF3</a>
-            format for gene model and product annotations, and
-            <a href="http://geneontology.org/page/go-annotation-file-gaf-format-10">GAF</a>
-            format for GO associations.</p>
-        </div>
-        <div class="col-md-3">
-          <h2>Social media</h2>
-          <p><a href="https://twitter.com/companionserver?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @companionserver</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <br>
-            for the lastest developments and updates.</p>
-        </div>
-        <div class="col-md-3">
-          <h2>High quality</h2>
-          <p>Data-generating components of the pipeline are built on time-tested
-            <em>de facto</em> standard software.</p>
-        </div>
-        <div class="col-md-3">
-          <h2>Portable</h2>
-          <p>Want to tweak the pipeline or perform large-scale annotations on
-            your compute cluster? Get <a href="http://www.nextflow.io">Nextflow</a>,
-            the pipeline <a href="https://github.com/iii-companion/companion">code</a>
-            under the hood and the <a href="https://www.docker.com">Docker</a>
-            <a href="https://hub.docker.com/repository/docker/uofgiii/companion">dependencies</a>
-            and run the whole workflow on your own machine!</p>
+            </div>          
+          </div>
         </div>
       </div>
         
