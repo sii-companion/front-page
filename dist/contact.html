@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Contact | Companion</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -26,6 +26,22 @@
     .footer {
       bottom: 0;
       position: absolute;
+    }
+
+    .map-responsive{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+    }
+  
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        padding: 6%;
     }
   </style>
 
@@ -97,14 +113,14 @@
     </div>
   </nav>
   
-  <div class="cover-container d-flex p-3 mx-auto flex-column">
+  <div class="d-flex p-2 mx-auto flex-column">
     <main role="main">
       <div class="row align-items-center">
         <div class="col-md-4" style="padding-bottom: 10%;">
           <div class="row justify-content-center">
             <div class="col-8">
-          <h2>Email</h2>
-          <p>If you are having any issues with Companion, either through the server or a local installation, 
+              <h2>Email</h2>
+              <p>If you are having any issues with Companion, either through the server or a local installation, 
                 feel free to email us at:
                 <br><a href="mailto:iii-companion@glasgow.ac.uk">iii-companion@glasgow.ac.uk</a>. </p>
             </div>
