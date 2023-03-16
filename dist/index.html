@@ -303,11 +303,11 @@
   <script src="js/main.js"></script>
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   <script>
-    $.ajax("/dist/version.txt").done(displayText);
+    $.ajax("version.txt").done(displayText);
     function displayText(data){
       $("#version_num").append(data);
     }
-    $.ajax("/dist/legacy_version.txt").done(displayLegacyText);
+    $.ajax("legacy_version.txt").done(displayLegacyText);
     function displayLegacyText(data){
       $("#fungi_version_num").append(data);
       $("#protozoa_version_num").append(data);
