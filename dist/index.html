@@ -24,6 +24,8 @@
   <!-- Custom styles for this template -->
   <meta name="theme-color" content="#fafafa">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
   <style>
     .card-img-top {
       padding: 8px;
@@ -135,7 +137,7 @@
                     <a class="btn btn-light" href="https://companion.gla.ac.uk/examples">Example</a>
                   </div>
                   <div class="card-footer">
-                    <p><object data="version.txt" type="text/plain" style="width: 90px; height: 30px; font-family: sans-serif;"></object></p>
+                    <div id="version_num"></div>
                   </div>
                 </div>
                 <div class="card text-center" style="width: 300px;">
@@ -148,7 +150,7 @@
                     <a class="btn btn-light" href="https://fungicompanion.gla.ac.uk/examples">Example</a>
                   </div>
                   <div class="card-footer">
-                    <p><object data="legacy_version.txt" type="text/plain" style="width: 135px; height: 30px; font-family: sans-serif"></object></p>
+                    <div id="fungi_version_num"></div>
                   </div>
                 </div>
                 <div class="card text-center" style="width: 300px;">
@@ -161,7 +163,7 @@
                     <a class="btn btn-light" href="https://protozoacompanion.gla.ac.uk/examples">Example</a>
                   </div>
                   <div class="card-footer">
-                    <p><object data="legacy_version.txt" type="text/plain" style="width: 135px; height: 30px; font-family: sans-serif"></object></p>
+                    <div id="protozoa_version_num"></div>
                   </div>
                 </div>
               </div>
@@ -300,6 +302,17 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script>
+    $.ajax("/dist/version.txt").done(displayText);
+    function displayText(data){
+      $("#version_num").append(data);
+    }
+    $.ajax("/dist/legacy_version.txt").done(displayLegacyText);
+    function displayLegacyText(data){
+      $("#fungi_version_num").append(data);
+      $("#protozoa_version_num").append(data);
+    }
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
