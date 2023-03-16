@@ -5,4 +5,4 @@ curl -L \
  -H "Authorization: Bearer $github_token" \
  -H "X-GitHub-Api-Version: 2022-11-28" \
   https://api.github.com/repos/iii-companion/companion/releases/latest \
-  | json tag_name > dist/version.txt
+  | jq  -r '.tag_name' > dist/version.txt
